@@ -1,0 +1,21 @@
+name: AntiBuild
+main: antiv3.main
+version: 1.0
+author: V3lop5
+description: AntiBuild Plugin fuer DayZ von TRIBE
+commands:
+  build:
+    description: Fuegt Spieler zum Bauteam hinzu
+permissions:
+  build.admin:
+    default: op
+    description: BuildPerm
+    children:
+      build.build: true
+      build.break: true
+  build.build:
+    description: BuildPermission
+    default: op
+  build.break:
+    description: BreakPermission
+    default: op
